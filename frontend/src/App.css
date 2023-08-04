@@ -1,0 +1,83 @@
+#root {
+  margin: 0 auto;
+}
+.editable-div {
+  border: 1px solid #ccc;
+  padding: 8px;
+  line-height: 1.5;
+  min-height: 1.5em;
+  outline: none;
+  overflow: hidden;
+}
+.parent-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+  grid-gap: 1.5rem;
+  align-content: flex-start;
+}
+.card-height {
+  height: min-content;
+}
+.student-list,
+.student-detail-list {
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+.student-detail-list {
+  top: 0px;
+  position: fixed;
+  left: 0px;
+}
+.right-answer {
+  background-color: lightgreen;
+}
+.wrong-answer {
+  background-color: red;
+}
+.unattempted-answer {
+  background-color: lightgray;
+}
+.assignment-card-button {
+  display: inline-flex;
+  justify-content: flex-end;
+  width: -webkit-fill-available;
+}
+.login-signup {
+  margin: auto;
+  height: 100vh;
+  align-items: center;
+  display: grid;
+}
+.login-signup-shadow {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+a {
+  text-decoration: blink !important;
+}
+
+.teacher-dashboard-card,
+.student-dashboard-card {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: transform 0.3s;
+}
+.teacher-dashboard-card:hover,
+.student-dashboard-card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.logout-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.toast-class {
+  margin: 1rem;
+  background: lightgrey;
+  /* min-width: 50%; */
+  border-radius: 1rem;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
